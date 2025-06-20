@@ -1,4 +1,4 @@
-const Home = () => {
+const HomePage = () => {
   const dispatch = useDispatch();
   const { callEndpoint } = useCallEndpoint();
   const { settings, getAndStoreOtherSetting } = useSettings();
@@ -34,9 +34,9 @@ const Home = () => {
   return (
     <>
       {showPasswordModal && (
-        <NewPasswordModal
-          onClose={() => setShowPasswordModal(false)}
-        />
+        <Modal center title="Cambio de contraseña" size="sm">
+          <NewPassword />
+        </Modal>
       )}
       {showProfileModal && (
         <UploadImageModal
