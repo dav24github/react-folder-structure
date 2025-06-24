@@ -1,0 +1,32 @@
+.schedules-wrapper {
+  display: flex;
+  justify-content: start;
+  gap: 20px;
+  flex-wrap: wrap;
+  background-color: $info-lighter;
+  padding: 15px;
+  border-radius: $br1;
+}
+
+.item {
+  width: 140px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+
+.ShiftTLabels {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 7%;
+  align-items: center;
+  gap: 25px;
+}
+
+.container {
+  flex: 1;
+  display: flex;
+  gap: 35px;
+  flex-wrap: wrap;
+}

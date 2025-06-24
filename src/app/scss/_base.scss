@@ -1,0 +1,40 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 10px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: $background;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $secondary-main;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: $secondary-dark;
+}
+
+.MuiAutocomplete-option {
+  font-size: 0.75rem;
+
+  @media (min-width: 1536px) {
+    font-size: 0.875rem;
+  }
+}
+
+.MuiList-root:has(.MuiListSubheader-root) {
+  padding-top: 0px;
+}
