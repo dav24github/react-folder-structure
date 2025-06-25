@@ -10,6 +10,7 @@
 # features
 
 - Use to group related components and logic for specific functionalities or use cases
+- index.ts => only export components (with exception)
 
 #
 
