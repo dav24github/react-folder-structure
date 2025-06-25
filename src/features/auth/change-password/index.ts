@@ -1,3 +1,4 @@
 export * from "./components/ConfirmationCode";
-export * from "./components/NewPassword";
+export * from "./components/NewPasswordForm";
 export * from "./components/SendEmailCode";
+export * from "./components/ResetPasswordModal";

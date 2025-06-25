@@ -1,16 +1,19 @@
 # App/Pages folder
 
-- No logic (action) components
+- Root pages structure based on routes logic
+- No logic (PUT, POST, DELETE) components
 - Fetch data is posible
 - Bussiness logic
 - Module management
+- May have components folder
 
 #
 
 # features
 
 - Use to group related components and logic for specific functionalities or use cases
-- index.ts => only export components (with exception)
+- index.ts => only export components
+- Less visual components posibble
 
 #
 

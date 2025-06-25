@@ -1,21 +1,13 @@
 const HomePage = () => {
-  const dispatch = useDispatch();
-  const { callEndpoint } = useCallEndpoint();
   const { settings, getAndStoreOtherSetting } = useSettings();
-  const { user } = useUser();
-  const { person, storeFormsStatus } = usePerson();
+  const { user } = useUser(); // resetCredencial askSetProfilePicture
+  const { person, getAndStoreFormsStatus } = usePerson();
   const { loadedData, error, fetchData } = useFetchSimultaneously([
     getAndStoreOtherSetting,
-    storeFormsStatus,
+    getAndStoreFormsStatus,
   ]);
   const [searchParams] = useSearchParams();
   const fromQuery = searchParams.get("from");
-  const [showPasswordModal, setShowPasswordModal] = useState<boolean>(false);
-  const [showProfileModal, setShowProfileModal] = useState<boolean>(false);
-
-  useEffect(() => {
-    if (user.resetCredencial) setShowPasswordModal(true);
-  }, [user.resetCredencial]);
 
   const completedForms = Boolean(
     person.generalInfo.status &&
@@ -33,19 +25,8 @@ const HomePage = () => {
 
   return (
     <>
-      {showPasswordModal && (
-        <Modal center title="Cambio de contraseña" size="sm">
-          <NewPassword />
-        </Modal>
-      )}
-      {showProfileModal && (
-        <UploadImageModal
-          size="sm"
-          src={null} // No profile
-          rounded
-          onLater={() => setShowProfileModal(false)}
-        />
-      )}
+      {user.resetCredencial && <ResetPaswordModal />}
+      {user.askSetProfilePicture && <ProfilePictureModal />}
       <ErrorBoundary
         fallbackComponent={<ErrorView handleClick={fetchData} />}
         loadedData={loadedData}
