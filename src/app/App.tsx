@@ -7,7 +7,7 @@ import {
 
 import { theme } from "./theme";
 import { axiosInstance } from "./services/axios.service";
-import { AppRoutes } from "./router/AppRoutes";
+import { AppRoutes } from "./routes/AppRoutes";
 import { DevelopMode, PopUp } from "./components";
 import { LoadingSpinner } from "./components/ui";
 import { setupInterceptorsTo } from "./interceptors";

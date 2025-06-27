@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 import { ComponentCard } from "@/components/ui";
 import { LoginForm } from "@/features/auth/login";
 
-const Login = () => {
+const LoginPage = () => {
   const styles = useLoginStyles();
 
   return (
@@ -50,4 +50,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default LoginPage;
