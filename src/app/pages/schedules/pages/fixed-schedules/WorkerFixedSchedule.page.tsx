@@ -14,7 +14,7 @@ import { MarkingView } from "../modules/marking/pages/MarkingView";
 import { SchedulesView } from "../modules/schedules/pages/SchedulesView";
 import { LinkedDeviceView } from "../modules/linked-device/pages/LinkedDeviceView";
 
-const WorkerSchedulePage = () => {
+const WorkerFixedSchedulePage = () => {
   return (
     <PageLayout padding>
       <ComponentCard
@@ -51,4 +51,4 @@ const WorkerSchedulePage = () => {
   );
 };
 
-export default SchedulesLayout;
+export default WorkerFixedSchedulePage;

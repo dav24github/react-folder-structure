@@ -1,0 +1,111 @@
+access-denied
+
+not-found
+
+[auth]
+    auth/login
+    auth/forgot-passsword
+    auth/confimation-code
+    auth/new-password
+
+[home]
+
+:user
+
+change-password
+
+[attendance-kiosk]
+    attendance-kiosk
+    attendance-kiosk/home
+    attendance-kiosk/marking
+
+[admin]
+    admin/user-creation
+    admin/users
+    [admin/uploads]
+        admin/uploads
+        admin/uploads/personal-info/edit
+        ...
+        admin/uploads/attendance/record
+        ...
+
+[workers]
+    workers
+    workers/:id/profile
+    workers/:id/job
+    workers/:id/projects
+
+    workers/requests
+    workers/requests/licenses
+    workers/requests/vacation
+    workers/requests/extra-hours
+
+    workers/documents
+
+[schedules]
+    schedules/fixed
+    schedules/fixed/:id
+    schedules/fixed/:id/history
+
+    schedules/seasonal/working-groups
+    schedules/seasonal/working-groups/:id
+    
+    schedules/attendances
+    schedules/attendances/:id
+
+
+my-attendance
+[my-requests]
+    my-requests
+    my-requests/licenses
+    my-requests/vacation
+    my-requests/extra-hours
+/my-payslips
+/my-advances
+[my-team]
+    my-team
+    [my-team/requests]
+        my-team/requests/licenses
+        my-team/requests/vacation
+        my-team/requests/extra-hours
+
+[payroll]
+    [payroll/regular-salary]
+        payroll/regular-salary
+        payroll/regular-salary/id
+        [payroll/regular-salary/id/group/:id]
+            payroll/regular-salary/id/group/:id/earned-salary/calculate
+            payroll/regular-salary/id/group/:id/earned-salary/record
+            ...
+    [payroll/upload-salary]
+        payroll/upload-salary
+        payroll/upload-salary/id
+    [payroll/advances]
+        payroll/advances
+        [payroll/advances/fortnights]
+            payroll/advances/fortnights
+            payroll/advances/fortnights/:id/calculate
+            payroll/advances/fortnights/:id/record
+        [payroll/advances/other-advances]
+            payroll/advances/other-advances
+            payroll/advances/other-advances/:id/calculate
+            payroll/advances/other-advances/:id/record
+    ...
+
+[compensation]
+    compensation
+    [compensation/severance-pay]
+        compensation/severance-pay
+        compensation/severance-pay/calculate
+        compensation/severance-pay/record
+    ...
+
+[projects]
+    projects
+    projects/:id
+
+reports
+
+dashboard
+
+settings

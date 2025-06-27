@@ -14,8 +14,8 @@ const AuthRoutes = () => {
       <Routes>
         {/* <Route path="/" element={<Navigate to="login" />} /> */}
         <Route path="login" element={<LoginPage />} />
-        <Route path="verify-user" element={<VerifyUserPage />} />
 
+        <Route path="forgot-passsword" element={<ForgotPasswordPage />} />
         <Route path="confimation-code" element={<ConfirmationCodePage />} />
         <Route path="new-password" element={<NewPasswordPage />} />
 
