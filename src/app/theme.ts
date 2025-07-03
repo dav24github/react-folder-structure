@@ -62,38 +62,8 @@ export const tokens: MyTheme = {
       2: "#cc8a02",
     },
   },
-  mediaQuery: {
-    downSm: "(max-width:600px)",
-    downLg: "(max-width:1200px)",
-  },
-  extra: {
-    paddingSeparator: {
-      ps1: 60,
-      ps2: 80,
-    },
-    tabsWidth: 180,
-    drawerWidth: 260,
-    spinnerSize: {
-      sm: 18,
-      md: 32,
-      lg: 40,
-    },
-    borderRadius: {
-      br1: "12px",
-      br2: "14px",
-    },
-    zIndex: {
-      z0: 0,
-      z1: 1,
-      z2: 2,
-      z3: 3,
-      Z100: 100,
-      Z200: 200,
-      Z300: 300,
-      Z400: 400,
-      Z500: 500,
-      Z600: 600,
-    },
+  typography: {
+    // h1, h2, ....
   },
 };
 
@@ -157,7 +127,6 @@ const themeSettings = (theme: Theme) => {
         fontFamily: "Arciform",
         [theme.breakpoints.up("xl")]: {
           fontSize: "2rem",
-          // fontSize: "2.5rem",
         },
         [theme.breakpoints.down("xl")]: {
           fontSize: "2rem",
@@ -165,10 +134,8 @@ const themeSettings = (theme: Theme) => {
       },
       h1: {
         fontFamily: "Arciform",
-        // letterSpacing: "2px",
         [theme.breakpoints.up("xl")]: {
           fontSize: "1.875rem",
-          // fontSize: "2rem",
         },
         [theme.breakpoints.down("xl")]: {
           fontSize: "1.875rem",
@@ -178,7 +145,6 @@ const themeSettings = (theme: Theme) => {
         fontFamily: "Arciform",
         [theme.breakpoints.up("xl")]: {
           fontSize: "1.75rem",
-          // fontSize: "1.875rem",
         },
         [theme.breakpoints.down("xl")]: {
           fontSize: "1.75rem",
@@ -188,7 +154,6 @@ const themeSettings = (theme: Theme) => {
         fontFamily: "Arciform",
         [theme.breakpoints.up("xl")]: {
           fontSize: "1.625rem",
-          // fontSize: "1.75rem",
         },
         [theme.breakpoints.down("xl")]: {
           fontSize: "1.625rem",
@@ -198,7 +163,6 @@ const themeSettings = (theme: Theme) => {
         fontFamily: "Arciform",
         [theme.breakpoints.up("xl")]: {
           fontSize: "1.5rem",
-          // fontSize: "1.625rem",
         },
         [theme.breakpoints.down("xl")]: {
           fontSize: "1.5rem",
@@ -208,7 +172,6 @@ const themeSettings = (theme: Theme) => {
         fontFamily: "Arciform",
         [theme.breakpoints.up("xl")]: {
           fontSize: "1.375rem",
-          // fontSize: "1.5rem",
         },
         [theme.breakpoints.down("xl")]: {
           fontSize: "1.375rem",
@@ -218,7 +181,6 @@ const themeSettings = (theme: Theme) => {
         fontFamily: "Arciform",
         [theme.breakpoints.up("xl")]: {
           fontSize: "1.25rem",
-          // fontSize: "1.375rem",
         },
         [theme.breakpoints.down("xl")]: {
           fontSize: "1.25rem",
@@ -228,7 +190,6 @@ const themeSettings = (theme: Theme) => {
         fontFamily: "Arciform",
         [theme.breakpoints.up("xl")]: {
           fontSize: "1.125rem",
-          // fontSize: "1.25rem",
         },
         [theme.breakpoints.down("xl")]: {
           fontSize: "1.125rem",
@@ -238,7 +199,6 @@ const themeSettings = (theme: Theme) => {
         fontFamily: ["Comfortaa", "cursive"].join(","),
         [theme.breakpoints.up("xl")]: {
           fontSize: "0.875rem",
-          // fontSize: "1rem",
         },
         [theme.breakpoints.down("xl")]: {
           fontSize: "0.875rem",
@@ -248,7 +208,6 @@ const themeSettings = (theme: Theme) => {
         fontFamily: ["Comfortaa", "cursive"].join(","),
         [theme.breakpoints.up("xl")]: {
           fontSize: "0.75rem",
-          // fontSize: "0.875rem",
         },
         [theme.breakpoints.down("xl")]: {
           fontSize: "0.75rem",
@@ -258,7 +217,6 @@ const themeSettings = (theme: Theme) => {
         fontFamily: ["Comfortaa", "cursive"].join(","),
         [theme.breakpoints.up("xl")]: {
           fontSize: "0.625rem",
-          // fontSize: "0.75rem",
         },
         [theme.breakpoints.down("xl")]: {
           fontSize: "0.625rem",
@@ -269,7 +227,6 @@ const themeSettings = (theme: Theme) => {
         textTransform: "none",
         [theme.breakpoints.up("xl")]: {
           fontSize: "0.875rem",
-          // fontSize: "1rem",
         },
         [theme.breakpoints.down("xl")]: {
           fontSize: "0.875rem",
@@ -282,3 +239,4 @@ const themeSettings = (theme: Theme) => {
 export let theme = createTheme();
 
 theme = createTheme(theme, themeSettings(theme));
+// TODO: convert theme into .json .scsc

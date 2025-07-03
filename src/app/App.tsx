@@ -4,7 +4,6 @@ import {
   StyledEngineProvider,
   ThemeProvider,
 } from "@mui/material";
-
 import { theme } from "./theme";
 import { axiosInstance } from "./services/axios.service";
 import { AppRoutes } from "./routes/AppRoutes";
