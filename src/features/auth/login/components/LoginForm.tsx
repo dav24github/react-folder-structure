@@ -2,13 +2,7 @@ import { Formik } from "formik";
 import { useDispatch } from "react-redux";
 import { storeUser } from "@/redux/states/user-slice";
 import { useNavigate } from "react-router-dom";
-import {
-  BtnsContainer,
-  FormGroup,
-  SubmitButton,
-  Textfield,
-} from "@/components/ui";
-import { FormLayout } from "@/styled-components";
+import { FormGroup, Textfield } from "@/components/ui";
 import { useCallEndpoint, useFormBuilder } from "@/hooks";
 import { loginService } from "../services/login.service";
 import { saveInLocalStorage } from "@/utils";
@@ -16,6 +10,8 @@ import { LocalStorageKeys } from "@/types";
 import { LoginRequest } from "../types/auth.types";
 import { loginFormBuilder } from "../utils/loginFormBuilder";
 import { useMemo } from "react";
+import { Button } from "@/shared/components/atoms/buttons/button/Button";
+import { Box } from "@mui/material";
 
 export const LoginForm = () => {
   const { initialValues, checkoutSchema } = useMemo(
@@ -50,18 +46,21 @@ export const LoginForm = () => {
       {({ handleSubmit }) => (
         <form onSubmit={handleSubmit} style={{ width: "100%" }}>
           <FormLayout>
-            <FormGroup>
-              <Textfield label="Usuario" name="username" />
-              <Textfield
-                label="Contraseña"
-                name="password"
-                type="password"
-                toggleIcons={["VisibilityOffOutlined", "VisibilityOutlined"]}
-              />
-            </FormGroup>
-            <BtnsContainer>
-              <SubmitButton>Iniciar sesión</SubmitButton>
-            </BtnsContainer>
+            <FormBody>
+              <FormGroup>
+                <Textfield label="Usuario" name="username" />
+                <Textfield
+                  label="Contraseña"
+                  name="password"
+                  type="password"
+                  toggleIcons={["VisibilityOffOutlined", "VisibilityOutlined"]}
+                />
+              </FormGroup>
+            </FormBody>
+
+            <FormActions colspan="1">
+              <Button type="submit">Iniciar sesión</Button>
+            </FormActions>
           </FormLayout>
         </form>
       )}

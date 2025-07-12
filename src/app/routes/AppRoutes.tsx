@@ -1,5 +1,5 @@
 import { lazy, Suspense } from "react";
-import { Navigate, Route, Routes } from "react-router-dom";
+import { Navigate, Outlet, Route, Routes } from "react-router-dom";
 import AuthRoutes from "../pages/auth/routes/AuthRoutes";
 import { NotFoundPage } from "../pages/_fallback/NotFound.page";
 import { AccesDeniedPage } from "../pages/_fallback/AccesDenied.page";
@@ -12,6 +12,7 @@ import { MyTeamRoutes } from "../pages/my-space/my-team/routes/MyTeamRoutes";
 import { MyProfilePage } from "../pages/MyProfile.page";
 import { ChangePasswordPage } from "../pages/ChangePassword.page";
 import ReportsPage from "../pages/dashboard/pages/Dashboard.page";
+import { MainLayout } from "@/shared/components/organism/layouts/main-layout/MainLayout";
 
 const LoadingSpinnerImport = (
   <LoadingSpinner noBackdrop color="secondary" display size="small" />
@@ -81,3 +82,9 @@ export const AppRoutes = () => {
     </Suspense>
   );
 };
+
+const OutledMainLayout = () => (
+  <MainLayout>
+    <Outlet />
+  </MainLayout>
+);

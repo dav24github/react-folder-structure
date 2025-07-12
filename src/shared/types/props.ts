@@ -397,7 +397,6 @@ export type TTableProps = {
   selection?: boolean;
   noPagination?: boolean;
   disabledQuickFilter?: boolean;
-  footer?: JSX.Element;
   calculationMode?: boolean;
   actions?: JSX.Element;
   height?: string;

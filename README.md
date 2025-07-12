@@ -1,3 +1,9 @@
+# General
+
+- Names of components folder can be simples unlike components themselves (e.g. Home>components>banner>HomeBanner.tsx)
+
+#
+
 # App/Pages folder
 
 - Root pages structure based on routes logic
@@ -5,7 +11,7 @@
 - Fetch data is posible
 - Bussiness logic
 - Module management
-- May have components folder
+- May have components folder (ONLY one level of complexity)
 
 #
 

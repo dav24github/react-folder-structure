@@ -1,32 +1,18 @@
+import { DatagridHeader } from "@/shared/components/molecules/datagrid-header/DatagridHeader";
+import { MetricCard } from "@/shared/components/molecules/metric-card/MetricCard";
+import { DataGrid } from "@/shared/components/organism/datagrid/DataGrid";
+import { DataGridLayout } from "@/shared/components/organism/layouts/datagrid-layout/DataGridLayout";
+import { PageLayout } from "@/shared/components/organism/layouts/page-layout/PageLayout";
+
 const UsersPage = () => {
   return (
-    <>
-      {modalEditUser.show && (
-        <EditUserModal
-          payload={modalEditUser.payload}
-          onClose={() => setModalEditUser({ show: false, payload: null })}
-          onUpdate={updatedUser}
+    <PageLayout title="Lista de Usuarios">
+      <DataGridLayout>
+        <DatagridHeader
+          right={<MetricCard size="small" label="Usarios de alta" value={10} />}
         />
-      )}
-      {modalSendCredentials.show && (
-        <SendCredentialsModal
-          payload={modalSendCredentials.payload}
-          onClose={() =>
-            setModalSendCredentials({ show: false, payload: null })
-          }
-        />
-      )}
-      {modalStateUser.show && (
-        <StateUserModal
-          payload={modalStateUser.payload}
-          onClose={() => setModalStateUser({ show: false, payload: null })}
-          onUpdate={updatedState}
-        />
-      )}
-      <PageLayout paddingRB title="Lista de usuarios">
-        <MyDataGrid
+        <DataGrid
           title="Lista_usuarios"
-          keepOriginalData
           rows={rows}
           columns={columns}
           error={error}
@@ -41,31 +27,9 @@ const UsersPage = () => {
               handlePaginationModelChange: handlePaginationModelChange,
             },
           }}
-          filter={{
-            component: (
-              <FilterDataGrid>
-                <StatusFilter
-                  filters={filters}
-                  setFilters={setFilters}
-                  message="Usuarios"
-                />
-              </FilterDataGrid>
-            ),
-            activeFilters: activeFilters,
-          }}
-          actions={
-            <Box width={240}>
-              <FeatureCard
-                int
-                color="success"
-                label="Usuarios de alta"
-                value={activeUsersTotal}
-              />
-            </Box>
-          }
         />
-      </PageLayout>
-    </>
+      </DataGridLayout>
+    </PageLayout>
   );
 };
 
