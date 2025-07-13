@@ -1,32 +1,24 @@
-import { SectionContent } from "../organism/contents/section-content/SectionContent";
-import { CardTabs } from "../organism/layouts/card-tabs/CardTabs";
-import { LeftRightLayout } from "../organism/layouts/left-right-layout/LeftRightLayout";
+import { Outlet } from "react-router-dom";
+import { Tabs } from "../molecules/tabs/Tabs";
+import { HorizontalLayout } from "../organism/layouts/horizontal-layout/HorizontalLayout";
 
-export const UploadTemplate = ({
-  formatDownloadFeature,
-  uploadFeature,
-  uploadTableFeature,
-}: any) => {
+export const UploadTemplate = () => {
   return (
-    <CardTabs
-      orientation="horizontal"
-      labels={["Subir archivo", "Historial"]}
-      tabPanels={[
-        <LeftRightLayout>
-          <SectionContent title="1. Formato de carga">
-            <Typography variant="subtitle1">
-              Selecciona los datos que quieres registrar:
-            </Typography>
-
-            {formatDownloadFeature}
-          </SectionContent>
-          <SectionContent title="2. Subir archivo">
-            {uploadFeature}
-          </SectionContent>
-        </LeftRightLayout>,
-        uploadTableFeature,
-      ]}
-      currentIndex={0}
-    />
+    <HorizontalLayout>
+      <Tabs
+        orientation="vertical"
+        sections={[
+          {
+            label: "Subir usuarios",
+            to: "/---",
+          },
+          {
+            label: "Historial",
+            to: "/---",
+          },
+        ]}
+      />
+      <Outlet />
+    </HorizontalLayout>
   );
 };

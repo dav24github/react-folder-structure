@@ -1,3 +1,5 @@
+import { UploadUserTable } from "@/features/user/components/upload/UploadUserTable";
+
 export const HistoryUploadPersonalInfoSection = () => {
-  return <div>HistoryUploadPersonalInfoSection</div>;
+  return <UploadUserTable />;
 };

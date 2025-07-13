@@ -5,21 +5,6 @@ import { ElevatedCard } from "@/shared/components/organism/cards/elevated-card/E
 import { SectionContent } from "@/shared/components/organism/contents/section-content/SectionContent";
 import { LeftRightLayout } from "@/shared/components/organism/layouts/left-right-layout/LeftRightLayout";
 
-export const UploadPersonalInfoSection = () => {
-  return (
-    <ElevatedCard>
-      <LeftRightLayout>
-        <SectionContent title="1. Formato de carga">
-          <Typography variant="subtitle1">
-            Selecciona los datos que quieres registrar:
-          </Typography>
-          <UploadPersonalInfoFormat />
-        </SectionContent>
-
-        <SectionContent title="2. Subir archivo">
-          <UploadPersonalInfoForm />
-        </SectionContent>
-      </LeftRightLayout>
-    </ElevatedCard>
-  );
+export const UploadAttendanceSection = () => {
+  return <ElevatedCard></ElevatedCard>;
 };
