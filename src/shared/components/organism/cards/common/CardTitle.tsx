@@ -1,12 +1,10 @@
-import React from "react";
-import { SectionContentTitle } from "../../contents/section-content/SectionContent";
-import {
-  TitleHeader,
-  TitleSection,
-} from "@/shared/components/molecules/title-header/TitleHeader";
+import { TitleHeader } from "@/shared/components/molecules/title-header/TitleHeader";
 
 /*
  * CardTitle => Only for nomenclature purpuse <Card><CardTitle></>
+ * Props => CardTitle => contained only <Toolbar>...</Toolbar> or just ONE Button/IconButton
+ *          justify end by default
+ * toolbar => contained only md buttons
  */
 export const CardTitle = ({ children, props }: TitleSectionProps) => {
   return (
@@ -15,3 +13,16 @@ export const CardTitle = ({ children, props }: TitleSectionProps) => {
     </TitleHeader>
   );
 };
+
+// <CardTitle
+//   icon="persons"
+//   center
+//   toolbar={
+//     <Toolbar>
+//       <Button />
+//       <Button />
+//     </Toolbar>
+//   }
+// >
+//   Mi Title
+// </CardTitle>;

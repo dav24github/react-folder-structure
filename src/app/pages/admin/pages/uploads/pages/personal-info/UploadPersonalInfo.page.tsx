@@ -1,5 +1,5 @@
 import { PageLayout } from "@/shared/components/organism/layouts/page-layout/PageLayout";
-import { UploadTemplate } from "@/shared/components/templates/UploadTemplate";
+import { UploadTabsTemplate } from "@/shared/components/templates/UploadTemplates";
 
 const UploadPersonalInfoPage = () => {
   return (
@@ -14,7 +14,7 @@ const UploadPersonalInfoPage = () => {
         },
       ]}
     >
-      <UploadTemplate />
+      <UploadTabsTemplate />
     </PageLayout>
   );
 };

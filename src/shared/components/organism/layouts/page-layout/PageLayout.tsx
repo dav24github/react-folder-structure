@@ -2,6 +2,7 @@ import { TitleHeader } from "@/shared/components/molecules/title-header/TitleHea
 
 /*
     FormLayout => contained only PageTitle and PageBody or children (PageBody)
+    toolbar => contained only lg buttons
 */
 export const PageLayout = ({ children }: any) => {
   return <div>{children.length === 2 ? children : <Error />}</div>;
@@ -10,10 +11,6 @@ export const PageLayout = ({ children }: any) => {
 export const PageTitle = ({ children }: any) => {
   return <TitleHeader variant="xh1">{children}</TitleHeader>;
 };
-
-// export const PageSubtitle = ({ children }: any) => {
-//   return <TitleHeader variant="xh2">{children}</TitleHeader>;
-// };
 
 export const PageBody = ({ children }: any) => {
   return <div>{children}</div>;

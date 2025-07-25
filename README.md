@@ -8,7 +8,7 @@
 
 - Root pages structure based on routes logic
 - No logic (PUT, POST, DELETE) components
-- Fetch data is posible
+- Fetch data is posible (avoid: search, filter, pagination or modal/CRUD)
 - Bussiness logic
 - Module management
 - May have components folder (ONLY one level of complexity)

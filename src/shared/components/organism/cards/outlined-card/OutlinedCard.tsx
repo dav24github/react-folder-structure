@@ -4,6 +4,7 @@ import React from "react";
 
 /*
     FormLayout => contained only CardTitle and CardBody or children (CardBody)
+    onClick => rippleEffect
 */
 export const OutlinedCard = ({ title, body }: CardProps) => {
   return (

@@ -63,7 +63,7 @@ const HomePage = () => {
                 <OutlinedCard>
                   <AvailableVacationCardBody />
                 </OutlinedCard>
-                <OutlinedCard title="Novedades del mes">
+                <OutlinedCard direction="row" title="Novedades del mes">
                   <MonthlyUpdateButton
                     title=""
                     description=""

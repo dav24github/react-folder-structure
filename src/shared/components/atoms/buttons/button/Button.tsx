@@ -1,5 +1,10 @@
 import React from "react";
 
-export const Button = ({ label, startIcon, endIcon }: any) => {
-  return <div>{label}</div>;
+export const Button = ({ label, startIcon, endIcon, bubble }: any) => {
+  return (
+    <div>
+      {label}
+      <Bubble>{bubble}</Bubble>
+    </div>
+  );
 };

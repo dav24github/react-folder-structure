@@ -1,4 +1,9 @@
-import { ProfileButton } from "../../molecules/profile-popover/DropdownButton";
+import { Box } from "@mui/material";
+import { Button } from "../../atoms/buttons/button/Button";
+import { Typography } from "../../atoms/typography/Typography";
+import { PopOver } from "../../molecules/overlays/pop-over/PopOver";
+import { ItemButton } from "../../atoms/buttons/item-button/ItemButton";
+import { ListContainer } from "../containers/list-container/ListContainer";
 
 export const MainToolbar = () => {
   const handlePerfil = () => {
@@ -12,17 +17,17 @@ export const MainToolbar = () => {
   };
 
   const profileMenu = (
-    <Box>
-      <MenuItem onClick={handlePerfil} disableRipple>
+    <ListContainer>
+      <ItemButton onClick={handlePerfil} disableRipple>
         Perfil
-      </MenuItem>
-      <MenuItem onClick={handleChangePassword} disableRipple>
+      </ItemButton>
+      <ItemButton onClick={handleChangePassword} disableRipple>
         Cambiar contraseña
-      </MenuItem>
-      <MenuItem onClick={handleLogout} disableRipple>
+      </ItemButton>
+      <ItemButton onClick={handleLogout} disableRipple>
         Cerrar sesión
-      </MenuItem>
-    </Box>
+      </ItemButton>
+    </ListContainer>
   );
 
   return (
@@ -31,17 +36,19 @@ export const MainToolbar = () => {
       <Box></Box>
 
       {/* Profile button */}
-      <Box ref={button} className={styles.label}>
-        <Avatar />
-        <MyTypography variant="body2">{user.name}</MyTypography>
-      </Box>
-      <Popover
+      <Button ref={button} endIcon="arrow-down">
+        <Box className={styles.label}>
+          <Avatar />
+          <Typography variant="body2">{user.name}</Typography>
+        </Box>
+      </Button>
+      <PopOver
         open={openPopOver}
         anchorEl={button.current}
         position="bottom-left"
       >
         {profileMenu}
-      </Popover>
+      </PopOver>
     </Box>
   );
 };

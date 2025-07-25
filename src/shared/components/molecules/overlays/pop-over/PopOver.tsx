@@ -1,8 +1,8 @@
 import React from "react";
 
-export const PopOverButton = ({ control, children }) => {
+export const PopOver = ({ control, children }:any) => {
   return (
-    <Popover
+    <PopoverMUI
       open={true}
       anchorEl={anchorEl}
       onClose={handleClose}

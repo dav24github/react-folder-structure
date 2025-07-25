@@ -11,7 +11,7 @@ import { MyAttendancePage } from "../pages/my-space/MyAttendance.page";
 import { MyTeamRoutes } from "../pages/my-space/my-team/routes/MyTeamRoutes";
 import { MyProfilePage } from "../pages/MyProfile.page";
 import { ChangePasswordPage } from "../pages/ChangePassword.page";
-import ReportsPage from "../pages/dashboard/pages/Dashboard.page";
+import ReportsPage from "../pages/dashboard/Dashboard.page";
 import { MainLayout } from "@/shared/components/organism/layouts/main-layout/MainLayout";
 
 const LoadingSpinnerImport = (
@@ -53,15 +53,7 @@ export const AppRoutes = () => {
 
               {/* My space routes */}
               <Route path="my-attendance" element={<MyAttendancePage />} />
-
-              <Route path="my-requests" element={<MyRequestsPage />} />
-              <Route path="my-requests/licenses" element={<MyRequestsPage />} />
-              <Route path="my-requests/vacation" element={<MyRequestsPage />} />
-              <Route
-                path="my-requests/extra-hours"
-                element={<MyRequestsPage />}
-              />
-
+              <Route path="my-requests" element={<MyRequestsRoutes />} />
               <Route path="my-payslips" element={<MyPayslipsPage />} />
               <Route path="my-advances" element={<MyAdvancesPage />} />
               <Route path="my-team" element={<MyTeamRoutes />} />
