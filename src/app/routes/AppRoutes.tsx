@@ -7,7 +7,7 @@ import AdminRoutes from "../pages/admin/routes/AdminRoutes";
 import WorkersRoutes from "../pages/workers/routes/WorkerRoutes";
 import AttendancesKioskRoutes from "../pages/attendance-kiosk/routes/AttendancesKioskRoutes";
 import SchedulesRoutes from "../pages/schedules/routes/schedules.route";
-import { MyAttendancePage } from "../pages/my-space/MyAttendance.page";
+import { MyAttendancePage } from "../pages/my-space/my-attendance/MyAttendance.page";
 import { MyTeamRoutes } from "../pages/my-space/my-team/routes/MyTeamRoutes";
 import { MyProfilePage } from "../pages/MyProfile.page";
 import { ChangePasswordPage } from "../pages/ChangePassword.page";

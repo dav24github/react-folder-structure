@@ -2,7 +2,7 @@ import { TitleHeader } from "@/shared/components/molecules/title-header/TitleHea
 
 /*
  * CardTitle => Only for nomenclature purpuse <Card><CardTitle></>
- * Props => CardTitle => contained only <Toolbar>...</Toolbar> or just ONE Button/IconButton
+ * Props => CardTitle => contained only <Toolbar>...</Toolbar> or just ONE Component
  *          justify end by default
  * toolbar => contained only md buttons
  */
