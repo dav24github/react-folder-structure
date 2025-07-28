@@ -6,7 +6,12 @@ export const DocumentManager = () => {
 
   return (
     <>
-      <List data={data} render={<WorkerFoldersItem />} pagination />
+      <List
+        data={data}
+        render={<WorkerFoldersItem />}
+        pagination
+        onSearch={() => {}}
+      />
       {/* <pagination /> ? */}
     </>
   );

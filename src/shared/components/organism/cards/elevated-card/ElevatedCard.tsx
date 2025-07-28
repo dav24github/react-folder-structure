@@ -1,6 +1,7 @@
 import { Box } from "@mui/material";
 import clsx from "clsx";
 import { CardBody } from "../common/CardBody";
+import { CardTitle } from "../common/CardTitle";
 
 export const ElevatedCard = ({ title, body,  }: CardProps) => {
   return (

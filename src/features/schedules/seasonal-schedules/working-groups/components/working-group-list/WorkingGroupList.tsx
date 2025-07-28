@@ -9,8 +9,7 @@ export const WorkingGroupList = () => {
       startItem={
         <Box width="100px" height="50px">
           <Button
-            fullWidth
-            fullHeight
+            size="auto"
             variant="dashed"
             color="secondary"
             startIcon="add"

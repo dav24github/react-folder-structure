@@ -1,5 +1,5 @@
 import React from "react";
 
-export const Slider = () => {
-  return <div>S</div>;
+export const Slider = (props: any) => {
+  return <div>Slider</div>;
 };
