@@ -1,5 +1,5 @@
 import { MarkingShifts } from "@/shared/components/organism/_attendance/MarkingShifts";
-import { MarkingAttendanceModal } from "../components/MarkingAttendanceModal";
+import { MarkingAttendanceModal } from "../../../../shared/components/organism/_attendance/MarkingAttendanceModal";
 
 export const MarkingAttendanceKiosk = () => {
   return (
