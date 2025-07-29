@@ -1,4 +1,4 @@
-import { TeamExtraHoursRequestTable } from "@/features/requests/components/tables/team/TeamExtraHoursRequestTable";
+import { TeamExtraHoursRequestTable } from "@/features/requests/tables/team/TeamExtraHoursRequestTable";
 
 export const TeamExtraHoursRequestsSection = () => {
   return <TeamExtraHoursRequestTable />;

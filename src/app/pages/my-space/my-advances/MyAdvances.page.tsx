@@ -1,4 +1,4 @@
-import { MyAdvanceList } from "@/features/payroll/advance/advance-report/components/MyAdvanceList";
+import { MyAdvanceList } from "@/features/payroll/advance/advance-report/MyAdvanceList";
 import { OutlinedCard } from "@/shared/components/organism/cards/outlined-card/OutlinedCard";
 import { PageLayout } from "@/shared/components/organism/layouts/page-layout/PageLayout";
 

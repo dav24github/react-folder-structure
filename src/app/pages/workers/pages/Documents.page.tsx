@@ -1,6 +1,6 @@
-import { AllDocumentsList } from "@/features/documents/components/all-documents-list/AllDocumentsList";
-import { DocumentManager } from "@/features/documents/components/document-manager/DocumentManager";
-import { WorkerFoldersList } from "@/features/documents/components/worker-documents/WorkerFoldersList";
+import { AllDocumentsList } from "@/features/documents/all-documents-list/AllDocumentsList";
+import { DocumentManager } from "@/features/documents/document-manager/DocumentManager";
+import { WorkerFoldersList } from "@/features/documents/worker-documents/WorkerFoldersList";
 import { IconButton } from "@/shared/components/atoms/buttons/Icon-button/IconButton";
 import { ItemButton } from "@/shared/components/atoms/buttons/item-button/ItemButton";
 import { Typography } from "@/shared/components/atoms/typography/Typography";

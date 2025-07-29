@@ -1,5 +1,5 @@
-import { WorkersVacationRequestCalendar } from "@/features/requests/components/calendars/WorkersVacationRequestCalendar";
-import { WorkersVacationRequestTable } from "@/features/requests/components/tables/workers/WorkersVacationRequestTable";
+import { WorkersVacationRequestCalendar } from "@/features/requests/calendars/WorkersVacationRequestCalendar";
+import { WorkersVacationRequestTable } from "@/features/requests/tables/workers/WorkersVacationRequestTable";
 import { VacationTemplate } from "@/shared/components/templates/VacationTemplate";
 
 export const WorkersVacationRequestsSection = () => {

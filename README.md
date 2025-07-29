@@ -12,6 +12,7 @@
 - Bussiness logic
 - Module management
 - May have components folder (ONLY one level of complexity)
+- Can contained Redux/hooks folder
 
 #
 
@@ -20,6 +21,8 @@
 - Use to group related components and logic for specific functionalities or use cases
 - index.ts => only export components
 - Less visual components posibble
+- Export only one file
+- Can contained Context/hooks
 
 #
 

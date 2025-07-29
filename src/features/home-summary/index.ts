@@ -1,1 +1,1 @@
-import * from "./components/HomeSumary"
+import * from "./HomeSumary"

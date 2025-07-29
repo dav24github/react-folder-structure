@@ -1,1 +1,1 @@
-export * from "./components/SeasonalScheduleTable";
+export * from "./SeasonalScheduleTable";
